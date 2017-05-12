@@ -1,0 +1,6 @@
+framework module Pods_asdfsdf {
+  umbrella header "Pods-asdfsdf-umbrella.h"
+
+  export *
+  module * { export * }
+}

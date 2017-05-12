@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="Skrub">
+            <connections>
+                <outlet property="carfuckingbutton" destination="Y2d-zW-eH5" id="C02-uQ-531"/>
+                <outlet property="mapView" destination="4eo-Pn-DDf" id="6SV-GM-oJe"/>
+                <outlet property="scheduleButton" destination="8DW-5n-MHb" id="3LF-f0-aIr"/>
+                <outlet property="stripeButton" destination="xcZ-7v-Swi" id="31e-si-7TR"/>
+                <outlet property="view" destination="iN0-l3-epB" id="b7j-5v-xj1"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundGradiant" translatesAutoresizingMaskIntoConstraints="NO" id="lbT-7d-eRj"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mhV-db-sei">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AQQ-7R-lMQ">
+                            <attributedString key="attributedText">
+                                <fragment content="S">
+                                    <attributes>
+                                        <color key="NSColor" red="0.21176470588235294" green="0.58039215686274515" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <font key="NSFont" size="51" name="HelveticaNeue-Thin"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="k">
+                                    <attributes>
+                                        <color key="NSColor" red="0.13725490196078433" green="0.7803921568627451" blue="0.047058823529411764" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <font key="NSFont" size="51" name="HelveticaNeue-Light"/>
+                                        <font key="NSOriginalFont" size="51" name="HelveticaNeue"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="rub">
+                                    <attributes>
+                                        <color key="NSColor" red="0.21176470588235294" green="0.58039215686274515" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <font key="NSFont" size="51" name="HelveticaNeue-Thin"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" image="skrubLogo" translatesAutoresizingMaskIntoConstraints="NO" id="PEJ-sn-CpG">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="5Ys-j4-QRV"/>
+                                <constraint firstAttribute="width" secondItem="PEJ-sn-CpG" secondAttribute="height" multiplier="1:1" id="Bbv-yC-zLX"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="AQQ-7R-lMQ" firstAttribute="centerY" secondItem="mhV-db-sei" secondAttribute="centerY" id="6eC-MN-OSB"/>
+                        <constraint firstItem="PEJ-sn-CpG" firstAttribute="leading" secondItem="mhV-db-sei" secondAttribute="leading" id="AYH-HY-ztk"/>
+                        <constraint firstAttribute="bottom" secondItem="AQQ-7R-lMQ" secondAttribute="bottom" constant="10" id="CjE-PC-Z1Y"/>
+                        <constraint firstAttribute="bottom" secondItem="PEJ-sn-CpG" secondAttribute="bottom" id="DgZ-2f-oj3"/>
+                        <constraint firstItem="AQQ-7R-lMQ" firstAttribute="centerX" secondItem="mhV-db-sei" secondAttribute="centerX" constant="25" id="Izg-O8-njr"/>
+                        <constraint firstAttribute="trailing" secondItem="AQQ-7R-lMQ" secondAttribute="trailing" id="JDN-gy-5cb"/>
+                        <constraint firstItem="AQQ-7R-lMQ" firstAttribute="leading" secondItem="PEJ-sn-CpG" secondAttribute="trailing" constant="10" id="L9y-w3-nol"/>
+                        <constraint firstItem="AQQ-7R-lMQ" firstAttribute="centerY" secondItem="mhV-db-sei" secondAttribute="centerY" id="Vou-ko-rPS"/>
+                        <constraint firstItem="PEJ-sn-CpG" firstAttribute="top" secondItem="mhV-db-sei" secondAttribute="top" id="aEr-hr-MDv"/>
+                        <constraint firstItem="AQQ-7R-lMQ" firstAttribute="leading" secondItem="PEJ-sn-CpG" secondAttribute="trailing" constant="10" id="isv-PW-9JT"/>
+                        <constraint firstItem="PEJ-sn-CpG" firstAttribute="centerY" secondItem="AQQ-7R-lMQ" secondAttribute="centerY" id="pZJ-uS-nem"/>
+                        <constraint firstItem="PEJ-sn-CpG" firstAttribute="centerY" secondItem="mhV-db-sei" secondAttribute="centerY" id="xJF-bC-Hpf"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="JDN-gy-5cb"/>
+                            <exclude reference="L9y-w3-nol"/>
+                            <exclude reference="Vou-ko-rPS"/>
+                            <exclude reference="AYH-HY-ztk"/>
+                            <exclude reference="DgZ-2f-oj3"/>
+                            <exclude reference="aEr-hr-MDv"/>
+                            <exclude reference="pZJ-uS-nem"/>
+                        </mask>
+                    </variation>
+                </view>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="4eo-Pn-DDf">
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="4eo-Pn-DDf" secondAttribute="height" multiplier="1:1" id="hw2-BW-FIa"/>
+                    </constraints>
+                </mapView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gvz-cN-hNp">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is Skrub?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4v-m5-n4c">
+                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="18"/>
+                            <color key="textColor" red="0.11372549019607843" green="0.58823529411764708" blue="0.043137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oO7-qn-G96">
+                            <attributedString key="attributedText">
+                                <fragment content="Because Skrub doesn't require any water, we are able to wash your car from practically anywhere!  For just ">
+                                    <attributes>
+                                        <color key="NSColor" red="0.21176470589999999" green="0.58039215690000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <font key="NSFont" size="13" name="HelveticaNeue"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="$25">
+                                    <attributes>
+                                        <color key="NSColor" red="0.11372549019607843" green="0.58823529411764708" blue="0.043137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <font key="NSFont" size="13" name="HelveticaNeue"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content=", you can drop a pin and get your car washed in a matter of time!">
+                                    <attributes>
+                                        <color key="NSColor" red="0.21176470589999999" green="0.58039215690000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <font key="NSFont" size="13" name="HelveticaNeue"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="b4v-m5-n4c" secondAttribute="trailing" id="9IE-XA-IAT"/>
+                        <constraint firstItem="oO7-qn-G96" firstAttribute="top" secondItem="b4v-m5-n4c" secondAttribute="bottom" id="9l8-U1-PtG"/>
+                        <constraint firstAttribute="bottom" secondItem="oO7-qn-G96" secondAttribute="bottom" id="EGe-4H-Iv7"/>
+                        <constraint firstAttribute="trailing" secondItem="oO7-qn-G96" secondAttribute="trailing" constant="10" id="EmX-Qe-8jc"/>
+                        <constraint firstItem="b4v-m5-n4c" firstAttribute="leading" secondItem="gvz-cN-hNp" secondAttribute="leading" id="LVw-Co-uxw"/>
+                        <constraint firstItem="b4v-m5-n4c" firstAttribute="top" secondItem="gvz-cN-hNp" secondAttribute="top" constant="8" id="Yby-ON-mcE"/>
+                        <constraint firstItem="oO7-qn-G96" firstAttribute="leading" secondItem="gvz-cN-hNp" secondAttribute="leading" constant="10" id="d2y-AL-vjr"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4z0-wK-Ffp">
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8DW-5n-MHb">
+                            <color key="tintColor" red="0.1137254902" green="0.58823529409999997" blue="0.043137254899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" image="timeSchedule">
+                                <color key="titleShadowColor" red="0.1137254902" green="0.58823529409999997" blue="0.043137254899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="scheduleButtonPressedWithSender:" destination="-1" eventType="touchUpInside" id="iGm-wu-4NZ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcZ-7v-Swi">
+                            <state key="normal" image="stripeIcon"/>
+                            <connections>
+                                <action selector="stripeButtonPressedWithSender:" destination="-1" eventType="touchUpInside" id="SQg-c7-Doq"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y2d-zW-eH5">
+                            <frame key="frameInset" minX="154" minY="26" width="46" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Button"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="xcZ-7v-Swi" firstAttribute="centerY" secondItem="4z0-wK-Ffp" secondAttribute="centerY" id="6En-aO-Sm0"/>
+                        <constraint firstItem="8DW-5n-MHb" firstAttribute="centerY" secondItem="4z0-wK-Ffp" secondAttribute="centerY" id="7FF-2o-i1O"/>
+                        <constraint firstItem="8DW-5n-MHb" firstAttribute="leading" secondItem="4z0-wK-Ffp" secondAttribute="leading" constant="20" id="vaM-Uo-0dI"/>
+                        <constraint firstAttribute="trailing" secondItem="xcZ-7v-Swi" secondAttribute="trailing" constant="20" id="zqM-jh-R4I"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="gvz-cN-hNp" firstAttribute="top" secondItem="4eo-Pn-DDf" secondAttribute="bottom" constant="8" id="4ke-Kq-mWV"/>
+                <constraint firstAttribute="trailing" secondItem="gvz-cN-hNp" secondAttribute="trailing" constant="10" id="99t-Qg-NgP"/>
+                <constraint firstAttribute="trailing" secondItem="4z0-wK-Ffp" secondAttribute="trailing" constant="10" id="9dP-QJ-1Qj"/>
+                <constraint firstItem="lbT-7d-eRj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Fcz-xU-B81"/>
+                <constraint firstItem="lbT-7d-eRj" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="FjD-Pw-OVn"/>
+                <constraint firstItem="4eo-Pn-DDf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="HyZ-em-6YK"/>
+                <constraint firstAttribute="trailing" secondItem="4eo-Pn-DDf" secondAttribute="trailing" constant="10" id="JTq-zW-30U"/>
+                <constraint firstItem="mhV-db-sei" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="UB3-cw-uoZ"/>
+                <constraint firstItem="4eo-Pn-DDf" firstAttribute="top" secondItem="mhV-db-sei" secondAttribute="bottom" constant="15" id="Uja-Ks-ySz"/>
+                <constraint firstAttribute="bottom" secondItem="mhV-db-sei" secondAttribute="bottom" constant="595" id="gbr-UJ-jDU"/>
+                <constraint firstAttribute="bottom" secondItem="4z0-wK-Ffp" secondAttribute="bottom" constant="10" id="gxT-T4-5St"/>
+                <constraint firstAttribute="trailing" secondItem="mhV-db-sei" secondAttribute="trailing" constant="20" id="ltX-Fl-Lf9"/>
+                <constraint firstItem="gvz-cN-hNp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="qDh-FD-FCW"/>
+                <constraint firstAttribute="trailing" secondItem="lbT-7d-eRj" secondAttribute="trailing" id="sF7-RH-clX"/>
+                <constraint firstItem="4z0-wK-Ffp" firstAttribute="top" secondItem="gvz-cN-hNp" secondAttribute="bottom" id="seq-YY-XJO"/>
+                <constraint firstItem="mhV-db-sei" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="25" id="xFJ-jm-T6N"/>
+                <constraint firstItem="4z0-wK-Ffp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="yjb-eu-XFl"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="gbr-UJ-jDU"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="backgroundGradiant" width="375" height="1000"/>
+        <image name="skrubLogo" width="91" height="90"/>
+        <image name="stripeIcon" width="50" height="50"/>
+        <image name="timeSchedule" width="50" height="50"/>
+    </resources>
+</document>

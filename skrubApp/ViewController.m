@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+@import MapKit;
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet MKMapView *mapKitCharlotte;
+
 
 @end
 
